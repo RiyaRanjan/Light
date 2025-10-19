@@ -1,0 +1,19 @@
+{
+  "name": "photon",
+  "version": "1.0.0",
+  "description": "A simple vanilla TypeScript project for GitHub Pages",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && cp src/index.html dist/ && cp src/style.css dist/",
+    "dev": "tsc --watch",
+    "serve": "python3 -m http.server 8000 --directory dist",
+    "clean": "rm -rf dist/*"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.0",
+    "@types/node": "^20.10.0"
+  },
+  "keywords": ["typescript", "vanilla", "github-pages"],
+  "author": "riya",
+  "license": "MIT"
+}
